@@ -3,6 +3,7 @@ import { RouterLink, RouterView } from "vue-router";
 
 import Magnify from "vue-material-design-icons/Magnify.vue";
 import Bell from "vue-material-design-icons/Bell.vue";
+import SideMenuItem from "./components/SideMenuItem.vue";
 </script>
 
 <template>
@@ -40,10 +41,36 @@ import Bell from "vue-material-design-icons/Bell.vue";
   >
     <div class="w-full pl-6 pt-3 cusor-pointer">
       <RouterLink to="/">
-        <img width="130" src="/public/images/deezer-logo.png" alt="Site Logo" />
+        <img width="130" src="/images/deezer-logo.png" alt="Site Logo" />
       </RouterLink>
     </div>
-    <div class="mt-[53px]">//menu section</div>
+    <div class="mt-[53px]">
+      <!-- //menu section -->
+      <SideMenuItem
+        iconString="music"
+        :iconSize="20"
+        pageurl="/"
+        name="Music"
+      />
+      <SideMenuItem
+        iconString="podcast"
+        :iconSize="20"
+        pageurl="/podcasts"
+        name="Podcasts"
+      />
+      <SideMenuItem
+        iconString="explore"
+        :iconSize="20"
+        pageurl="/artist"
+        name="Explore"
+      />
+      <SideMenuItem
+        iconString="favourite"
+        :iconSize="20"
+        pageurl="/favourite"
+        name="Favourites"
+      />
+    </div>
     <div class="text-[#A2A2AD] font-light text-[12px] pl-[62px] mt-[25px]">
       <div class="py-[9px] hover:text-[#EF5465] cusor-pointer">
         Favourite tracks
@@ -58,7 +85,7 @@ import Bell from "vue-material-design-icons/Bell.vue";
   <div
     class="fixed w-[calc(100%-240px)] h-[calc(100%-56px)] ml-[240px] mt-[56px] overflow-auto"
   >
-    <!-- <RouterView /> -->
+    <RouterView />
   </div>
 </template>
 

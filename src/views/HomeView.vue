@@ -1,3 +1,5 @@
 <script setup></script>
 
-<template>HOME VIEW</template>
+<template>
+  <div class="text-white">HOME VIEW</div>
+</template>
