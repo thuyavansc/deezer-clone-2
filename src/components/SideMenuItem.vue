@@ -44,7 +44,7 @@ const isHover = () => {
       :class="
         pageUrl === route.path
           ? 'border-l-[#EF5465] text-[#EF5465]'
-          : 'border-l-[#191922]'
+          : 'border-l-[#191922] text-white'
       "
       class="border-l-4 w-full hover:text-[#EF5465]"
       @mouseenter="($event) => isHover()"
