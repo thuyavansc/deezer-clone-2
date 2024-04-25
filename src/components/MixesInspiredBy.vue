@@ -2,7 +2,7 @@
 import { toRef, ref, toRefs } from "vue";
 import { RouterLink } from "vue-router";
 
-import Paly from "vue-material-design-icons/Play.vue";
+import Play from "vue-material-design-icons/Play.vue";
 
 let isHover = ref(false);
 
@@ -43,7 +43,7 @@ const { by, text, to } = toRefs(props);
             "
             class="absolute z-20 p-1.5 rounded-full bg-white left-[6px]"
           >
-            <Paly :size="30" />
+            <Play :size="30" />
           </div>
           <img class="min-h-[54px] rounded-sm z-0" :src="image" alt="" />
         </div>
