@@ -2,6 +2,7 @@
 import MixesInspiredBy from "@/components/MixesInspiredBy.vue";
 import MultiArtistSelect from "@/components/MultiArtistSelect.vue";
 import CustomCarousel from "@/components/CustomCarousel.vue";
+import Highlights from "@/components/Highlights.vue";
 </script>
 
 <template>
@@ -270,5 +271,214 @@ import CustomCarousel from "@/components/CustomCarousel.vue";
         ]"
       />
     </div>
+    <!-- Hightlight section -->
+    <div class="px-8 mt-8 min-w-[800px]">
+      <div class="text-white text-xl font-semibold inline-block">
+        Highlights
+      </div>
+      <div class="py-3"></div>
+      <div class="flex items-center gap-8">
+        <div class="rounded-lg w-1/2">
+          <Highlights
+            by="Some Artists 1"
+            song="Awesome song for you"
+            image="https://picsum.photos/id/220/800/300"
+          />
+        </div>
+        <div class="rounded-lg w-1/2">
+          <Highlights
+            by="Some Artists 1"
+            song="Another banger BRUV!"
+            image="https://picsum.photos/id/229/800/300"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-8 min-w-[800px]">
+      <CustomCarousel
+        category="Popular playlist"
+        :data="[
+          {
+            url: 'https://picsum.photos/id/54/300/300',
+            song: 'Foregone',
+            by: 'In Flames',
+            releasedOn: '10/02/2023',
+          },
+          {
+            url: 'https://picsum.photos/id/102/300/300',
+            song: 'Dark Waters',
+            by: 'Delain',
+            releasedOn: '09/01/2023',
+          },
+          {
+            url: 'https://picsum.photos/id/126/300/300',
+            song: 'Heritage',
+            by: 'Distant',
+            releasedOn: '10/01/2023',
+          },
+          {
+            url: 'https://picsum.photos/id/136/300/300',
+            song: 'Meanwhile',
+            by: 'Klone',
+            releasedOn: '08/02/2023',
+          },
+          {
+            url: 'https://picsum.photos/id/146/300/300',
+            song: 'Truth Decay',
+            by: 'You Me At Six',
+            releasedOn: '10/01/2023',
+          },
+          {
+            url: 'https://picsum.photos/id/156/300/300',
+            song: 'This Is Why',
+            by: 'Paramore',
+            releasedOn: '10/02/2023',
+          },
+          {
+            url: 'https://picsum.photos/id/165/300/300',
+            song: 'The Jaws Of Life',
+            by: 'Pierce The Veil',
+            releasedOn: '09/23/2023',
+          },
+          {
+            url: 'https://picsum.photos/id/196/300/300',
+            song: 'The Future Is Your Past',
+            by: 'In The Brian Jonestown Massacre',
+            releasedOn: '07/25/2023',
+          },
+          {
+            url: 'https://picsum.photos/id/216/300/300',
+            song: 'The Land, The Water, The Sky',
+            by: 'Black Belt Eagle Scout',
+            releasedOn: '09/22/2023',
+          },
+          {
+            url: 'https://picsum.photos/id/222/300/300',
+            song: 'The Day My Father Died',
+            by: 'SYML',
+            releasedOn: '10/02/2023',
+          },
+          {
+            url: 'https://picsum.photos/id/227/300/300',
+            song: 'Complete Mountain Almanac',
+            by: 'Complete Mountain Almanac',
+            releasedOn: '10/02/2023',
+          },
+          {
+            url: 'https://picsum.photos/id/237/300/300',
+            song: 'Music From Montana Story',
+            by: 'Kevin Morby',
+            releasedOn: '10/01/2023',
+          },
+        ]"
+      />
+    </div>
+    <div class="px-8 mt-8 min-w-[800px]">
+      <div class="text-white text-xl font-semibold inline-block">
+        Highlights
+      </div>
+
+      <div class="py-3"></div>
+
+      <div class="flex items-center gap-8">
+        <div class="rounded-lg w-1/2">
+          <Highlights
+            by="Some Artist 1"
+            song="Awsome Song for you!"
+            image="https://picsum.photos/id/177/800/300"
+          />
+        </div>
+        <div class="rounded-lg w-1/2">
+          <Highlights
+            by="Some Artist 2"
+            song="Another banger BRUV!"
+            image="https://picsum.photos/id/125/800/300"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-8 min-w-[800px]">
+      <CustomCarousel
+        category="New releases for you"
+        :data="[
+          {
+            url: 'https://picsum.photos/id/134/300/300',
+            song: 'Foregone',
+            by: 'In Flames',
+            releasedOn: '10/02/2023',
+          },
+          {
+            url: 'https://picsum.photos/id/144/300/300',
+            song: 'Dark Waters',
+            by: 'Delain',
+            releasedOn: '09/01/2023',
+          },
+          {
+            url: 'https://picsum.photos/id/146/300/300',
+            song: 'Heritage',
+            by: 'Distant',
+            releasedOn: '10/01/2023',
+          },
+          {
+            url: 'https://picsum.photos/id/78/300/300',
+            song: 'Meanwhile',
+            by: 'Klone',
+            releasedOn: '08/02/2023',
+          },
+          {
+            url: 'https://picsum.photos/id/151/300/300',
+            song: 'Truth Decay',
+            by: 'You Me At Six',
+            releasedOn: '10/01/2023',
+          },
+          {
+            url: 'https://picsum.photos/id/155/300/300',
+            song: 'This Is Why',
+            by: 'Paramore',
+            releasedOn: '10/02/2023',
+          },
+          {
+            url: 'https://picsum.photos/id/167/300/300',
+            song: 'The Jaws Of Life',
+            by: 'Pierce The Veil',
+            releasedOn: '09/23/2023',
+          },
+          {
+            url: 'https://picsum.photos/id/191/300/300',
+            song: 'The Future Is Your Past',
+            by: 'In The Brian Jonestown Massacre',
+            releasedOn: '07/25/2023',
+          },
+          {
+            url: 'https://picsum.photos/id/194/300/300',
+            song: 'The Land, The Water, The Sky',
+            by: 'Black Belt Eagle Scout',
+            releasedOn: '09/22/2023',
+          },
+          {
+            url: 'https://picsum.photos/id/177/300/300',
+            song: 'The Day My Father Died',
+            by: 'SYML',
+            releasedOn: '10/02/2023',
+          },
+          {
+            url: 'https://picsum.photos/id/227/300/300',
+            song: 'Complete Mountain Almanac',
+            by: 'Complete Mountain Almanac',
+            releasedOn: '10/02/2023',
+          },
+          {
+            url: 'https://picsum.photos/id/232/300/300',
+            song: 'Music From Montana Story',
+            by: 'Kevin Morby',
+            releasedOn: '10/01/2023',
+          },
+        ]"
+      />
+    </div>
+
+    <div class="pb-40"></div>
   </div>
 </template>
