@@ -1,5 +1,6 @@
 <script setup>
 import { ref, watch, onMounted } from "vue";
+import MusicPlayerVolume from "../components/MusicPlayerVolume.vue";
 
 //Icon
 import ShuffleVariant from "vue-material-design-icons/ShuffleVariant.vue";
@@ -271,8 +272,23 @@ watch(
             class="absolute -top-12 -left-20 px-4 bg-[#2a2a37] rounded-xl shadow-xl"
           >
             <!-- Music Player Volumen component -->
+            <MusicPlayerVolume />
           </div>
         </div>
+        <div
+          class="p-2 ml-2 hover:bg-[#5a5a5a] hover:bg-opacity-50 rounded-full cursor-pointer"
+        >
+          <Tune class="block" fillColor="#FFFFFF" :size="17" />
+        </div>
+      </div>
+      <div class="flex items-center ml-6-border-l border-l-[#363636]">
+        <img
+          class="rounded-sm ml-6"
+          width="28"
+          :src="currentArtist.albumCover"
+          alt=""
+        />
+        <div class="text-xs ml-1.5 text-white font-light">Queue</div>
       </div>
     </div>
   </div>
