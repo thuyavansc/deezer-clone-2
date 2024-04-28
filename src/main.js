@@ -6,11 +6,11 @@ import { createPinia } from "pinia";
 
 import piniaPluginPersistedstate from "pinia-plugin-persistedstate";
 
-const pinia = createPinia();
-pinia.use(piniaPluginPersistedstate);
-
 import App from "./App.vue";
 import router from "./router";
+
+const pinia = createPinia();
+pinia.use(piniaPluginPersistedstate);
 
 const app = createApp(App);
 

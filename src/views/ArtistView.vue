@@ -1,6 +1,6 @@
 <script setup>
 //Components
-// import SongRow from "../components/SongRow.vue";
+import SongRow from "../components/SongRow.vue";
 
 //Icon
 import Magnify from "vue-material-design-icons/Magnify.vue";
